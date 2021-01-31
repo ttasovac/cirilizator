@@ -42,7 +42,7 @@ if (window.contentScriptInjected !== true) {
         "Č": "Ч",
         "Č": "Ч", // C with caron
         "DŽ": "Џ",
-        "Ǆ": "Џ", 
+        "Ǆ": "Џ",
         "DŽ": "Џ", // D + Z with caron
         //"DZ": "Џ",
         "Dž": "Џ",
@@ -420,9 +420,9 @@ if (window.contentScriptInjected !== true) {
         return trie;
     }
 
-    const trie = buildTrie(initialMap);
+    var trie = buildTrie(initialMap);
     console.log("Ћирилизатор - Caching and replacing text on page " + window.location.href);
-    processText(document, 'cache-replace');
+    proce ssText(document, 'cache-replace');
 
     // Parse DOM on change
     const observer = new MutationObserver(mutations => {
