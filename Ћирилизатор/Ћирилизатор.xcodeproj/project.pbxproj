@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A205551225C6D4D2001016C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205551125C6D4D2001016C8 /* AppDelegate.swift */; };
+		A205551525C6D4D2001016C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A205551325C6D4D2001016C8 /* Main.storyboard */; };
+		A205551725C6D4D2001016C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205551625C6D4D2001016C8 /* ViewController.swift */; };
+		A205551925C6D4D5001016C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A205551825C6D4D5001016C8 /* Assets.xcassets */; };
+		A205552025C6D4D5001016C8 /* Ћирилизатор Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A205551F25C6D4D5001016C8 /* Ћирилизатор Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A205552525C6D4D5001016C8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A205552425C6D4D5001016C8 /* Cocoa.framework */; };
+		A205552825C6D4D5001016C8 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205552725C6D4D5001016C8 /* SafariWebExtensionHandler.swift */; };
+		A205553C25C6D4D6001016C8 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = A205553525C6D4D6001016C8 /* LICENSE.md */; };
+		A205553D25C6D4D6001016C8 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = A205553625C6D4D6001016C8 /* background.js */; };
+		A205553E25C6D4D6001016C8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A205553725C6D4D6001016C8 /* README.md */; };
+		A205553F25C6D4D6001016C8 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = A205553825C6D4D6001016C8 /* icons */; };
+		A205554025C6D4D6001016C8 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = A205553925C6D4D6001016C8 /* manifest.json */; };
+		A205554125C6D4D6001016C8 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = A205553A25C6D4D6001016C8 /* content.js */; };
+		A205554225C6D4D6001016C8 /* Ћирилизатор in Resources */ = {isa = PBXBuildFile; fileRef = A205553B25C6D4D6001016C8 /* Ћирилизатор */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A205552125C6D4D5001016C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A205550525C6D4D2001016C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A205551E25C6D4D5001016C8;
+			remoteInfo = "Ћирилизатор Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A205553025C6D4D5001016C8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A205552025C6D4D5001016C8 /* Ћирилизатор Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A205550D25C6D4D2001016C8 /* Ћирилизатор.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ћирилизатор.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A205551025C6D4D2001016C8 /* ___________.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "___________.entitlements"; sourceTree = "<group>"; };
+		A205551125C6D4D2001016C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A205551425C6D4D2001016C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A205551625C6D4D2001016C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A205551825C6D4D5001016C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A205551A25C6D4D5001016C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A205551F25C6D4D5001016C8 /* Ћирилизатор Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ћирилизатор Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A205552425C6D4D5001016C8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A205552725C6D4D5001016C8 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		A205552925C6D4D5001016C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A205552A25C6D4D5001016C8 /* ____________Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "____________Extension.entitlements"; sourceTree = "<group>"; };
+		A205553525C6D4D6001016C8 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../../LICENSE.md; sourceTree = "<group>"; };
+		A205553625C6D4D6001016C8 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../background.js; sourceTree = "<group>"; };
+		A205553725C6D4D6001016C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		A205553825C6D4D6001016C8 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../icons; sourceTree = "<group>"; };
+		A205553925C6D4D6001016C8 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../manifest.json; sourceTree = "<group>"; };
+		A205553A25C6D4D6001016C8 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../content.js; sourceTree = "<group>"; };
+		A205553B25C6D4D6001016C8 /* Ћирилизатор */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Ћирилизатор"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A205550A25C6D4D2001016C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A205551C25C6D4D5001016C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A205552525C6D4D5001016C8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A205550425C6D4D2001016C8 = {
+			isa = PBXGroup;
+			children = (
+				A205550F25C6D4D2001016C8 /* Ћирилизатор */,
+				A205552625C6D4D5001016C8 /* Ћирилизатор Extension */,
+				A205552325C6D4D5001016C8 /* Frameworks */,
+				A205550E25C6D4D2001016C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A205550E25C6D4D2001016C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A205550D25C6D4D2001016C8 /* Ћирилизатор.app */,
+				A205551F25C6D4D5001016C8 /* Ћирилизатор Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A205550F25C6D4D2001016C8 /* Ћирилизатор */ = {
+			isa = PBXGroup;
+			children = (
+				A205551025C6D4D2001016C8 /* ___________.entitlements */,
+				A205551125C6D4D2001016C8 /* AppDelegate.swift */,
+				A205551325C6D4D2001016C8 /* Main.storyboard */,
+				A205551625C6D4D2001016C8 /* ViewController.swift */,
+				A205551825C6D4D5001016C8 /* Assets.xcassets */,
+				A205551A25C6D4D5001016C8 /* Info.plist */,
+			);
+			path = "Ћирилизатор";
+			sourceTree = "<group>";
+		};
+		A205552325C6D4D5001016C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A205552425C6D4D5001016C8 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A205552625C6D4D5001016C8 /* Ћирилизатор Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A205553425C6D4D6001016C8 /* Resources */,
+				A205552725C6D4D5001016C8 /* SafariWebExtensionHandler.swift */,
+				A205552925C6D4D5001016C8 /* Info.plist */,
+				A205552A25C6D4D5001016C8 /* ____________Extension.entitlements */,
+			);
+			path = "Ћирилизатор Extension";
+			sourceTree = "<group>";
+		};
+		A205553425C6D4D6001016C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A205553525C6D4D6001016C8 /* LICENSE.md */,
+				A205553625C6D4D6001016C8 /* background.js */,
+				A205553725C6D4D6001016C8 /* README.md */,
+				A205553825C6D4D6001016C8 /* icons */,
+				A205553925C6D4D6001016C8 /* manifest.json */,
+				A205553A25C6D4D6001016C8 /* content.js */,
+				A205553B25C6D4D6001016C8 /* Ћирилизатор */,
+			);
+			name = Resources;
+			path = "Ћирилизатор Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A205550C25C6D4D2001016C8 /* Ћирилизатор */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A205553125C6D4D5001016C8 /* Build configuration list for PBXNativeTarget "Ћирилизатор" */;
+			buildPhases = (
+				A205550925C6D4D2001016C8 /* Sources */,
+				A205550A25C6D4D2001016C8 /* Frameworks */,
+				A205550B25C6D4D2001016C8 /* Resources */,
+				A205553025C6D4D5001016C8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A205552225C6D4D5001016C8 /* PBXTargetDependency */,
+			);
+			name = "Ћирилизатор";
+			productName = "Ћирилизатор";
+			productReference = A205550D25C6D4D2001016C8 /* Ћирилизатор.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A205551E25C6D4D5001016C8 /* Ћирилизатор Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A205552D25C6D4D5001016C8 /* Build configuration list for PBXNativeTarget "Ћирилизатор Extension" */;
+			buildPhases = (
+				A205551B25C6D4D5001016C8 /* Sources */,
+				A205551C25C6D4D5001016C8 /* Frameworks */,
+				A205551D25C6D4D5001016C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ћирилизатор Extension";
+			productName = "Ћирилизатор Extension";
+			productReference = A205551F25C6D4D5001016C8 /* Ћирилизатор Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A205550525C6D4D2001016C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A205550C25C6D4D2001016C8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A205551E25C6D4D5001016C8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = A205550825C6D4D2001016C8 /* Build configuration list for PBXProject "Ћирилизатор" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A205550425C6D4D2001016C8;
+			productRefGroup = A205550E25C6D4D2001016C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A205550C25C6D4D2001016C8 /* Ћирилизатор */,
+				A205551E25C6D4D5001016C8 /* Ћирилизатор Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A205550B25C6D4D2001016C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A205551925C6D4D5001016C8 /* Assets.xcassets in Resources */,
+				A205551525C6D4D2001016C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A205551D25C6D4D5001016C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A205554225C6D4D6001016C8 /* Ћирилизатор in Resources */,
+				A205554125C6D4D6001016C8 /* content.js in Resources */,
+				A205553E25C6D4D6001016C8 /* README.md in Resources */,
+				A205553F25C6D4D6001016C8 /* icons in Resources */,
+				A205554025C6D4D6001016C8 /* manifest.json in Resources */,
+				A205553D25C6D4D6001016C8 /* background.js in Resources */,
+				A205553C25C6D4D6001016C8 /* LICENSE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A205550925C6D4D2001016C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A205551725C6D4D2001016C8 /* ViewController.swift in Sources */,
+				A205551225C6D4D2001016C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A205551B25C6D4D5001016C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A205552825C6D4D5001016C8 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A205552225C6D4D5001016C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A205551E25C6D4D5001016C8 /* Ћирилизатор Extension */;
+			targetProxy = A205552125C6D4D5001016C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A205551325C6D4D2001016C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A205551425C6D4D2001016C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A205552B25C6D4D5001016C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A205552C25C6D4D5001016C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A205552E25C6D4D5001016C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Ћирилизатор Extension/____________Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ћирилизатор Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.humanistika.-----------.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A205552F25C6D4D5001016C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Ћирилизатор Extension/____________Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ћирилизатор Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.humanistika.-----------.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A205553225C6D4D5001016C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ћирилизатор/___________.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Ћирилизатор/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.humanistika.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A205553325C6D4D5001016C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ћирилизатор/___________.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Ћирилизатор/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.humanistika.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A205550825C6D4D2001016C8 /* Build configuration list for PBXProject "Ћирилизатор" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A205552B25C6D4D5001016C8 /* Debug */,
+				A205552C25C6D4D5001016C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A205552D25C6D4D5001016C8 /* Build configuration list for PBXNativeTarget "Ћирилизатор Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A205552E25C6D4D5001016C8 /* Debug */,
+				A205552F25C6D4D5001016C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A205553125C6D4D5001016C8 /* Build configuration list for PBXNativeTarget "Ћирилизатор" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A205553225C6D4D5001016C8 /* Debug */,
+				A205553325C6D4D5001016C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A205550525C6D4D2001016C8 /* Project object */;
+}

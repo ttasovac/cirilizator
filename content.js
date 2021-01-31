@@ -422,7 +422,7 @@ if (window.contentScriptInjected !== true) {
 
     var trie = buildTrie(initialMap);
     console.log("Ћирилизатор - Caching and replacing text on page " + window.location.href);
-    proce ssText(document, 'cache-replace');
+    processText(document, 'cache-replace');
 
     // Parse DOM on change
     const observer = new MutationObserver(mutations => {
