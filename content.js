@@ -23,11 +23,13 @@ if (window.contentScriptInjected !== true) {
         "LJ": "Љ",
         "Ǉ": "Љ",
         "Lj": "Љ",
+        "ǈ": "Љ",
         "M": "М",
         "N": "Н",
         "NJ": "Њ",
         "Ǌ": "Њ",
         "Nj": "Њ",
+        "ǋ": "Њ",
         "O": "О",
         "P": "П",
         "R": "Р",
@@ -46,11 +48,13 @@ if (window.contentScriptInjected !== true) {
         "DŽ": "Џ", // D + Z with caron
         //"DZ": "Џ",
         "Dž": "Џ",
+        "ǅ": "Џ",
         "Dž": "Џ", // D + z with caron
-        "Dz": "Џ",
+        //"Dz": "Џ",
         "Š": "Ш",
         "Š": "Ш", // S with caron
         "a": "а",
+        "æ": "ае",
         "b": "б",
         "v": "в",
         "g": "г",
@@ -111,35 +115,44 @@ if (window.contentScriptInjected !== true) {
         initialMap["ć"] = "ђ";
     }
 
-
     var serbianWordsWithForeignCharacterCombinations = [
         "aparthejd",
         "ddor",
         "dss",
         "dvadesettrog",
         "epp",
+        "fss",
         "gss",
         "interreakc",
         "interresor",
+        "izzzdiovns",
         "kss",
+        "llsls",
         "mmf",
+        "naddu",
+        "natha",
+        "natho",
         "ommetar",
+        "penthaus",
         "poddirektor",
+        "poddisciplin",
+        "poddomen",
         "poddres",
         "posthumn",
         "posttrans",
         "posttraum",
+        "pothodni",
         "pothranj",
         "prethod",
         "ptt",
         "sbb",
+        "ssp",
+        "ssrnj",
         "sssr",
         "superračun",
         "transseks",
         "transsibir",
         "tridesettrog",
-        "urla",
-        "urli"
     ];
 
     var commonForeignWords = [
@@ -147,57 +160,50 @@ if (window.contentScriptInjected !== true) {
         "adobe",
         "advanced",
         "advertising",
-        "alpha",
         "autocad",
-        "bluetooth",
+        "bitcoin",
         "book",
         "boot",
-        "bosch",
+        "cancel",
         "canon",
         "carlsberg",
-        "chat",
-        "chevrolet",
-        "chrome",
         "cisco",
         "clio",
         "cloud",
         "coca-col",
-        "conditions",
         "cookie",
         "cooking",
         "cool",
         "covid",
-        "cpu",
         "dacia",
         "default",
         "developer",
         "e-mail",
         "edge",
-        "electronics",
         "email",
+        "emoji",
         "english",
         "facebook",
         "fashion",
         "food",
         "foundation",
         "gaming",
-        "ghz",
-        "github",
         "gmail",
-        "gmbh",
         "gmt",
         "good",
         "google",
         "hdmi",
+        "home",
+        "image",
         "iphon",
         "ipod",
         "javascript",
+        "jazeera",
         "joomla",
         "khz",
         "league",
         "like",
         "linkedin",
-        "login",
         "look",
         "macbook",
         "mail",
@@ -212,36 +218,51 @@ if (window.contentScriptInjected !== true) {
         "online",
         "outlook",
         "panasonic",
+        "pdf",
         "peugeot",
         "podcast",
-        "porsche",
         "postpaid",
         "printscreen",
         "procredit",
         "renault",
-        "school",
+        "screenshot",
+        "seen",
         "selfie",
         "share",
         "shift",
         "shop",
         "smartphone",
         "space",
-        "ssd",
         "steam",
+        "stream",
         "subscrib",
-        "tech",
-        "technology",
-        "terms",
-        "the",
-        "thinkpad",
-        "thread",
         "tool",
         "topic",
         "trailer",
+        "ufc",
         "unicredit",
-        "url",
         "username",
         "viber",
+    ];
+
+    var wholeForeignWords = [
+        "air",
+        "alpha",
+        "conditions",
+        "cpu",
+        "dj",
+        "electronics",
+        "gmbh",
+        "ii", 
+        "iii", 
+        "khz",
+        "live",
+        "login",
+        "previous",
+        "public",
+        "terms",
+        "url",
+        "vii",
         "viii",
         "visa",
     ];
@@ -296,19 +317,22 @@ if (window.contentScriptInjected !== true) {
             "blijedje",
             "bludje",
             "bridjе",
-            "vidje",
+            "vidjel",
+            "vidjet",
             "vindjakn",
             "višenedje",
             "vrijedje",
             "gdje",
-            "gudjer",
             "gudje",
             "gdjir",
             "daždje",
             "dvonedje",
             "devetonedje",
             "desetonedje",
-            "djev",
+            "djb",
+            "djeva",
+            "djevi",
+            "djevo",
             "djed",
             "djejstv",
             "djel",
@@ -336,7 +360,6 @@ if (window.contentScriptInjected !== true) {
             "dovdje",
             "dogrdje",
             "dodjel",
-            "dodjelj",
             "drvodje",
             "drugdje",
             "elektrosnabdje",
@@ -370,7 +393,8 @@ if (window.contentScriptInjected !== true) {
             "kojegdje",
             "kudjelj",
             "lebdje",
-            "ludje",
+            "ludjel",
+            "ludjet",
             "makfadjen",
             "marmadjuk",
             "međudjel",
@@ -378,10 +402,14 @@ if (window.contentScriptInjected !== true) {
             "nadjača",
             "nadjeb",
             "nadjev",
-            "nadjen",
+            "nadjenul",
+            "nadjenuo",
+            "nadjenut",
             "negdje",
             "nedjel",
             "nadjunač",
+            "nenadjača",
+            "nenadjebi",
             "nenavidje",
             "neodje",
             "nepodjarm",
@@ -390,7 +418,6 @@ if (window.contentScriptInjected !== true) {
             "obdjel",
             "obnevidje",
             "ovdje",
-            "ovdje-ondje",
             "odjav",
             "odjah",
             "odjaš",
@@ -404,7 +431,6 @@ if (window.contentScriptInjected !== true) {
             "odjeć",
             "odjec",
             "odjur",
-            "odsjed",
             "odsjedje",
             "ondje",
             "opredje",
@@ -417,6 +443,7 @@ if (window.contentScriptInjected !== true) {
             "povidje",
             "pogdjegdje",
             "pogdje",
+            "podjakn",
             "podjamč",
             "podjemč",
             "podjar",
@@ -467,7 +494,8 @@ if (window.contentScriptInjected !== true) {
             "raspodje",
             "rasprdje",
             "remekdjel",
-            "rudje",
+            "rudjen",
+            "rudjet",
             "sadje",
             "svagdje",
             "svidje",
@@ -626,8 +654,8 @@ if (window.contentScriptInjected !== true) {
     // Parse DOM on change
     const observer = new MutationObserver(mutations => {
         for (let mutation of mutations) {
-            for (let node of mutation.addedNodes) {
-                processText(node, !document.hidden && isEnabled ? 'cache-replace' : 'cache');
+            if (mutation.addedNodes.length > 0) {
+                processText(mutation.target, !document.hidden && isEnabled ? 'cache-replace' : 'cache');
             }
         }
     });
@@ -653,10 +681,6 @@ if (window.contentScriptInjected !== true) {
 
     // Recursively process text within descendent text nodes.
     function processText(parentNode, mode) {
-        if (parentNode.nodeType === 3) {
-            processTextNode(parentNode, mode);
-        }
-
         if (/SCRIPT|STYLE/.test(parentNode.nodeName)) {
             return;
         }
@@ -695,7 +719,7 @@ if (window.contentScriptInjected !== true) {
         }
 
         let text = node.originalText || node.nodeValue;
-        node.nodeValue = transliterate(text);
+        node.nodeValue = textToCyrillic(text);
     }
 
     function processAttribute(node, attribute, mode) {
@@ -720,10 +744,10 @@ if (window.contentScriptInjected !== true) {
         }
 
         let text = node.originalAttributes[attribute] || node.getAttribute(attribute);
-        node.setAttribute(attribute, transliterate(text));
+        node.setAttribute(attribute, textToCyrillic(text));
     }
 
-    function transliterate(text) {
+    function textToCyrillic(text) {
         if (text.trim().length === 0) {
             return text;
         }
@@ -731,8 +755,11 @@ if (window.contentScriptInjected !== true) {
         let words = text.split(' ');
 
         for (let i = 0, length = words.length; i < length; i++) {
-            if (!looksLikeForeignWord(words[i])) {
-                words[i] = convertToCyrillic(words[i]);
+            let index = transliterationIndexOfWordStartsWith(words[i], wholeForeignWords, "-");
+            if (index >= 0) {
+                words[i] = words[i].substring(0, index) + wordToCyrillic(words[i].substring(index));
+            } else if (!looksLikeForeignWord(words[i])) {
+                words[i] = wordToCyrillic(words[i]);
             }
         }
 
@@ -749,7 +776,7 @@ if (window.contentScriptInjected !== true) {
             return false;
         }
 
-        if (wordInArray(word, foreignCharacterCombinations)) {
+        if (wordContainsString(word, foreignCharacterCombinations)) {
             return true;
         }
 
@@ -757,22 +784,26 @@ if (window.contentScriptInjected !== true) {
             return true;
         }
 
+        if (wordIsEqualTo(word, wholeForeignWords)) {
+            return true;
+        }
+
         return false;
     }
 
-    function convertToCyrillic(str) {
-        str = splitDigraphs(str);
+    function wordToCyrillic(word) {
+        word = splitDigraphs(word);
 
         let result = '';
 
-        for (let i = 0, length = str.length; i < length; i++) {
-            if (!trie[str[i]]) {
-                result += str[i];
+        for (let i = 0, length = word.length; i < length; i++) {
+            if (!trie[word[i]]) {
+                result += word[i];
                 continue;
             }
 
             // Search trie
-            let currentNode = trie[str[i]];
+            let currentNode = trie[word[i]];
             let currentDepth = 0;
             let valueDepth = 0;
             let value = '';
@@ -783,16 +814,16 @@ if (window.contentScriptInjected !== true) {
                     valueDepth = currentDepth;
                 }
 
-                if (currentNode[str[i + currentDepth + 1]]) {
+                if (currentNode[word[i + currentDepth + 1]]) {
                     currentDepth++;
-                    currentNode = currentNode[str[i + currentDepth]];
+                    currentNode = currentNode[word[i + currentDepth]];
                 } else {
                     break;
                 }
             }
 
             // Insert original text if match is incomplete
-            result += value || str.substr(i, valueDepth + 1);
+            result += value || word.substr(i, valueDepth + 1);
             i += valueDepth;
         }
 
@@ -834,7 +865,7 @@ if (window.contentScriptInjected !== true) {
         return false;
     }
 
-    function wordInArray(word, array) {
+    function wordContainsString(word, array) {
         for (let arrayWord of array) {
             if (word.includes(arrayWord)) {
                 return true;
@@ -843,4 +874,38 @@ if (window.contentScriptInjected !== true) {
 
         return false;
     }
+
+    function wordIsEqualTo(word, array) {
+        for (let arrayWord of array) {
+            if (word === arrayWord) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /*
+     * Retrieves index of the first character of the word that should be transliterated.
+     * Function examines only words that have a root that is a foreign word, followed by
+     * some separator character and remainder of the word which is in Serbian.
+     * Example: dj-evi should be transliterated as dj-еви so the function retrieves 3.
+     */
+    function transliterationIndexOfWordStartsWith(word, array, charSeparator) {
+        word = word.trim().toLowerCase();
+        if (word === "") {
+            return -1;
+        }
+
+        let appendedForeignWords = array.map(el => el + charSeparator);
+
+        for (let arrayWord of appendedForeignWords) {
+            if (word.startsWith(arrayWord)) {
+                return arrayWord.length;
+            }
+        }
+
+        return -1;
+    }
+
 }
